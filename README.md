@@ -1,30 +1,58 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# [Live Preview](https://gregarious-mochi-5579c7.netlify.app/)
 
-Currently, two official plugins are available:
+# Shopping site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to shopping site, an interactive online shopping experience created as a part of The Odin Project course. The goal of this project is to provide a user-friendly interface for exploring and purchasing products.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React: For building the user interface.
+- TypeScript: For adding type safety to the JavaScript code.
+- HTML & CSS: For structuring and styling the web pages.
+- Vite: For bundling and optimizing the application.
+- React Router Dom: For managing navigation within the application.
+- Axios: For making API requests.
 
-- Configure the top-level `parserOptions` property like this:
+## Running the Application Locally
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Fork the repository, then clone it to your local machine. Navigate to the project directory and run the following commands:
+
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+2. **Run the Development Server**:
+   ```bash
+   npm run dev
+   ```
+3. **Build the Application**:
+   ```bash
+   npm run build
+   ```
+
+## Testing
+
+This project is equipped with a robust testing suite to ensure functionality and performance:
+
+- **Vitest**: For running unit and integration tests.
+- **@testing-library/react**: For testing React components in a realistic environment.
+- **Axios Mock Adapter**: For mocking API requests during tests.
+
+To run the tests, use the command:
+
+```bash
+npm test
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Learning Objectives
+
+- **React Component Lifecycle**: Understanding how useEffect hook works and managing state updates.
+- **API Integration**: Fetching data from APIs and handling responses.
+- **Testing React Applications**: Writing and running tests to ensure component reliability.
+
+## Future Improvements
+
+- **Refactoring for Performance**: Optimizing fetching data with useEffect.
+- **Advanced State Management**: Implementing more complex state logic.
+- **Enhanced User Experience**: Adding more interactive features for users.
